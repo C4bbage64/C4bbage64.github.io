@@ -51,13 +51,53 @@ nav a:hover {
     color: #f4f4f9;
 }
 
+.hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
 section {
     padding: 8rem 0 4rem;
     text-align: center;
 }
 
-#projects .project {
+#projects .project-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 10px;
     margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-10px);
 }
 
 footer {
@@ -65,6 +105,17 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer .social-links a:hover {
+    color: #ddd;
 }
 
 #back-to-top {
