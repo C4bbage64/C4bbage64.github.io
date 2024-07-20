@@ -9,10 +9,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Back to top button
-const backToTopButton = document.createElement('button');
-backToTopButton.innerText = 'Top';
-backToTopButton.id = 'back-to-top';
-document.body.appendChild(backToTopButton);
+const backToTopButton = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
