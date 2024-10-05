@@ -1,0 +1,52 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: $secondary-color;
+    padding: 10px 0;
+
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+
+        li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background-color: $primary-color;
+    color: white;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        @include button-style;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $primary-color;
+    color: white;
+}
