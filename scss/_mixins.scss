@@ -1,0 +1,11 @@
+@mixin button-style {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
